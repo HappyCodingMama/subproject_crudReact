@@ -2,7 +2,7 @@
 
 # SNS WebApp
 
-- Deploying the App on Netlify []
+- Deploying the App on Firebase [https://lets-talk-14ce3.web.app/]
 
 ## Based on
 
