@@ -1,6 +1,6 @@
-# Social Network Service in React using Firebase
+# Blog in React using Firebase
 
-# SNS WebApp
+# Blog WebApp
 
 - Deploying the App on Firebase [https://lets-talk-14ce3.web.app/]
 
@@ -12,16 +12,11 @@
 
 - HTML, SASS, React JS, Node JS
 
-# What I did
-
-- UI Design
-
 # What I learned about
 
 - SASS
 - Firebase Authentication
-- How To Create Add Tags Input
 
-## Graphic Data
+## Icon
 
 - react icons [https://react-icons.github.io/react-icons/]
