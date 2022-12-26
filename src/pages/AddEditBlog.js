@@ -37,7 +37,7 @@ const AddEditBlog = ({ user, setActive }) => {
 
   const navigate = useNavigate();
 
-  const { title, tags, category, trending, description } = form;
+  const { title, category, trending, description } = form;
 
   useEffect(() => {
     const uploadFile = () => {
@@ -94,9 +94,7 @@ const AddEditBlog = ({ user, setActive }) => {
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
-  const handleTags = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
+
   const handleTrending = (e) => {
     setForm({ ...form, trending: e.target.value });
   };
@@ -106,7 +104,7 @@ const AddEditBlog = ({ user, setActive }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (category && tags && title && description && trending) {
+    if (category && title && description && trending) {
       if (!id) {
         try {
           await addDoc(collection(db, 'blogs'), {
