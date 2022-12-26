@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,500;1,900&display=swap');
+//lobster
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --color-bg: #1b1464;
+  --color-bg-variant: #0a062f;
+  --color-primary: #d980fa;
+  --color-primary-light: #ffaae7;
+  --color-primary-dark: #6942c2;
+  --color-primary-variant: #9980fa;
+  --color-light: #fda7df;
+  --color-white: #ffffee;
+  --color-dark: #0d093d;
+  --color-black: #000000;
+
+  --color-green: #15d4ff;
+  --color-red: #e20031;
+
+  --transition: all 400ms ease;
+
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: var(--color-primary-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary);
+}
+
+h1,
+h2,
+h5 {
+  font-family: 'Roboto Slab', serif;
+}
+
+small {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+  background-color: var(--color-bg);
+  background-size: 8px 8px;
+  color: var(--color-primary);
+  line-height: 1.7;
+}
+
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 3 rem;
+}
+
+h5 {
+  font-size: 0.2 rem;
+}
+
+section {
+  margin-top: 8rem;
+}
+
+section > h2,
+section > h5 {
+  text-align: center;
+  color: var(--color-primary);
+}
+
+section > h2 {
+  color: var(--color-white);
+  margin-bottom: 3rem;
+}
+
+.text-light {
+  color: var(--color-light);
+}
+
+.active {
+  color: var(--color-light);
+}
+
+a {
+  color: var(--color-primary);
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--color-white);
+}
+
+.title {
+  font-size: 3rem;
+  padding-top: 8rem;
+  color: var(--color-primary);
+}
+
+.btn {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1rem;
+  font-weight: 500;
+  background: var(--color-primary);
+  color: var(--color-bg);
+  width: max-content;
+  display: inline-block;
+  padding: 0.3rem 0.7rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  border: 2px solid var(--color-primary);
+  transition: var(--transition);
+}
+
+.btn__icons {
+  vertical-align: middle;
+}
+
+.btn:hover {
+  color: var(--color-primary);
+  background-color: transparent;
+}
+
+.btnLine {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--color-primary);
+  background-color: transparent;
+  width: max-content;
+  display: inline-block;
+  padding: 0.4rem 0.7rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  border: 1.5px solid var(--color-primary);
+  transition: var(--transition);
+}
+
+.btnLine:hover {
+  background: var(--color-primary);
+  color: var(--color-bg);
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: var(--color-bg);
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.inputbar {
+  width: 70%;
+  font-size: 1rem;
+  font-family: 'Roboto Slab', serif;
+  background: transparent;
+  color: var(--color-primary);
+  border-bottom: 2px solid var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.inputbar::placeholder {
+  color: var(--color-primary-variant);
+}
+
+.inputbar:focus {
+  outline: none;
+}
+
+.footer {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+
+/* media queries (tablet) */
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
+
+  section {
+    margin-top: 6rem;
+  }
+}
+
+/* media queries (mobile) */
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+
+  section > h2 {
+    margin-bottom: 2rem;
+  }
+}

@@ -1,0 +1,139 @@
+.blogs-container {
+  margin-bottom: 3rem;
+  .blog-heading-daily {
+    font-size: 1.5rem;
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+
+    gap: 6px;
+  }
+  .blog-items {
+    width: 100%;
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+    gap: 1rem;
+
+    @media (max-width: 600px) {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      gap: 1rem;
+    }
+
+    .blogs-item {
+      background-color: var(--color-black);
+
+      border-radius: 2rem;
+      overflow: hidden;
+      position: relative;
+      height: 500px;
+
+      .blogs-img {
+        border-radius: 0.6rem;
+        width: 100%;
+        img {
+          width: 100%;
+          object-fit: cover;
+          opacity: 0.6;
+        }
+      }
+
+      .blogs-contents {
+        padding: 2rem;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        color: var(--color-white);
+
+        .text-start {
+          display: flex;
+          flex-direction: column;
+          .item-titles {
+            .item-category {
+              margin-bottom: 0.7rem;
+              .category {
+                display: inline-block;
+                position: relative;
+                font-family: 'Ubuntu', sans-serif;
+
+                color: var(--color-white);
+                font-size: 0.9rem;
+                letter-spacing: 0.03rem;
+                font-weight: 600;
+                border-radius: 4px;
+              }
+            }
+            .item-title {
+              width: 200px;
+              .blog-title {
+                font-size: 2rem;
+                text-decoration: underline;
+                font-weight: 600;
+                line-height: 1;
+              }
+              .author {
+                font-size: 1rem;
+              }
+            }
+            .item-meta-info {
+              margin-top: 0.6rem;
+              span {
+                p {
+                  font-size: 0.9rem;
+                }
+              }
+            }
+          }
+          .short-description {
+            font-size: 1rem;
+            line-height: 1;
+          }
+          .item-detail {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            .item-detail-readmore {
+              margin-top: 1rem;
+              .btn-read {
+                color: var(--color-white);
+                background-color: transparent;
+                font-family: 'Roboto Slab', serif;
+                font-size: 1rem;
+                font-weight: 500;
+
+                width: max-content;
+                display: inline-block;
+                padding: 0.2rem 0.6rem;
+                border-radius: 0.3rem;
+                cursor: pointer;
+                border: 2px solid var(--color-white);
+                transition: var(--transition);
+              }
+              .btn-read:hover {
+                background: var(--color-white);
+                color: var(--color-black);
+              }
+            }
+            .item-detail-icons {
+              display: flex;
+              gap: 1rem;
+              cursor: pointer;
+              .trash-icon {
+                font-size: 1.2rem;
+              }
+              .edit-icon {
+                color: var(--color-white);
+                font-size: 1.3rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

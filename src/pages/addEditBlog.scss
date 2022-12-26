@@ -1,0 +1,113 @@
+.container-addeditblog {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 100%;
+
+  align-items: center;
+
+  .addeditblog-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .form-title {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+  }
+  .addeditblog-content {
+    display: flex;
+
+    height: 800px;
+    width: 100%;
+    max-width: 1024px;
+
+    .blog-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      width: 100%;
+      input {
+        margin-top: 1rem;
+        margin-bottom: 0.8rem;
+        font-size: 1rem;
+        font-family: 'Roboto Slab', serif;
+        border: 1px solid var(--color-primary-variant);
+        padding: 0.5rem 0.5rem;
+        width: 100%;
+        background-color: transparent;
+        color: var(--color-primary);
+      }
+      input[type='file']::file-selector-button {
+        font-size: 0.9rem;
+        color: var(--color-bg);
+        font-family: 'Roboto Slab', serif;
+        background-color: var(--color-primary-variant);
+        cursor: pointer;
+      }
+
+      .edit-news {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 1024px;
+        p {
+        }
+        .form-check {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 130px;
+          margin-left: 7rem;
+          .form-check-input {
+          }
+          .form-check-label {
+          }
+        }
+      }
+      .category-box {
+        width: 100%;
+        max-width: 1024px;
+        .category-dropdown {
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+          font-size: 1rem;
+          font-family: 'Roboto Slab', serif;
+          color: var(--color-primary);
+          border: 1px solid var(--color-primary-variant);
+          padding: 0.5rem 0.5rem;
+          width: 100%;
+          background-color: transparent;
+        }
+      }
+
+      .textarea-box {
+        width: 100%;
+
+        textarea {
+          margin-top: 1rem;
+          margin-bottom: 0.8rem;
+          font-size: 1rem;
+          font-family: 'Roboto Slab', serif;
+          border: 1px solid var(--color-primary-variant);
+          padding: 0.5rem 0.5rem;
+          width: 100%;
+          background-color: transparent;
+          color: var(--color-primary);
+          height: 180px;
+        }
+      }
+      .file-upload {
+      }
+      button {
+        margin-top: 1rem;
+      }
+    }
+    .blog-form ::placeholder {
+      color: var(--color-primary);
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.container-home {
+  .blogs-title-topstories {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+  }
+  .border-home {
+    display: flex;
+    column-gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .blog-section {
+    }
+  }
+}
